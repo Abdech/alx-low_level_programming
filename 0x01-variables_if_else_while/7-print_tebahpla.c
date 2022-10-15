@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 /**
  *main - Entry point
  *
@@ -7,12 +8,14 @@
  */
 int main(void)
 {
-	int nums = 0;
+	int letters = 'Z';
 
-	while (nums < 10)
+	while (letters >= 'A')
 	{
-		putchar((nums) + '0');
-		nums++;
+		int lowerCase = tolower(letters);
+
+		putchar(lowerCase);
+		letters--;
 	}
 	putchar('\n');
 	return (0);
