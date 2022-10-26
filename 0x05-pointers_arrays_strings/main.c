@@ -3,11 +3,9 @@
 
 int main(void)
 {
-	int a, b;
-	
-	a = 98;
-	b = 43
-	
+	char *str;
 
-
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	_puts(str);
+	return (0);
 }

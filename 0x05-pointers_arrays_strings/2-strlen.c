@@ -7,16 +7,16 @@
  *
  *@s: is the parameter that the length is counted
  *
- *return - the functions returns a void
+ *Return: the functions returns an int which is the length
  */
 int _strlen(char *s)
-{	
+{
 	int strLength = 0;
 
-	while(*s != '\0')
+	while (*s != '\0')
 	{
 		strLength++;
 		s++;
 	}
-	return strLength;
+	return (strLength);
 }
