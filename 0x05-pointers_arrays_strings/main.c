@@ -3,11 +3,11 @@
 
 int main(void)
 {
-	int n;
+	int a, b;
+	
+	a = 98;
+	b = 43
+	
 
-	n = 403;
-	printf("n=%d\n", n);
-	reset_to_98(&n);
-	printf("n=%d\n", n);
-	return (0);
+
 }
