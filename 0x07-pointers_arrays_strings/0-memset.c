@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- *memset- This function will fill a block of memory
+ *_memset- This function will fill a block of memory
  *		with a particular value.
  *
  *@s:Thi is the starting address to be filled
@@ -17,6 +17,6 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	memset(s, b, n);
-
+	return (s);
 }
 
