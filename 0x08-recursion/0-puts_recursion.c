@@ -11,6 +11,23 @@
 
 void _puts_recursion(char *s)
 {
-	puts(s);
-}
+	/*
+	 *check parameter is
+	 *available
+	 */
 
+	if (*s)
+	{
+		/*
+		 *insert one letter from
+		*parameter and
+		*the func call itself
+		*plus 1 which takes
+		*the next letter
+		 */
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	else
+		_putchar('\n');
+}
