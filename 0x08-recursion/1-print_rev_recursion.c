@@ -11,13 +11,9 @@
 
 void _print_rev_recursion(char *s)
 {
-	/*
-	 *check parameter is
-	 *available
-	 */
-
 	if (*s)
 	{
 		_print_rev_recursion(s + 1);
+		_putchar(*s);
 	}
 }
