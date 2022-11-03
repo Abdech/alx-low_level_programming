@@ -9,7 +9,7 @@
   *Return:returns an int
   */
 
-int factorial(int n)
+int factorial(unsigned int n)
 {
 	if (n <= 1)
 		return (n);
