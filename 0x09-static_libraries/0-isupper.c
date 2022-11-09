@@ -8,7 +8,8 @@
  * @c: is the input parameter that is checked
  * Return: 0 or 1 depending on the input
  */
-int _isupper(char c)
+
+int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);
