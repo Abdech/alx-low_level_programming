@@ -3,17 +3,23 @@
 #include <string.h>
 
 /**
- *_strncat- This function concatenates two dest and src
+ * _strcmp - function that comares two strings
  *
- *@dest: The first parameter that concatenates with src
- *@src: The second parameter that concatenates with dest
- *@n:specify how many letters from src to be concatenated
+ * @s1: a pointer to first array
+ * @s2: a pointer to second array
  *
- * Return: This returns characters
+ * Return: +ve, -ve or 0 for greatr,less equal strings
  */
 
-char *_strncat(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-	strncat(dest, src, n);
-	return (dest);
+	int i = 0;
+
+	while ((s1[i] != '\0') || (s2[i] != '\0'))
+	{
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+		i++;
+	}
+	return (0);
 }
