@@ -1,3 +1,6 @@
+#ifndef _STRUCT_
+#define _STRUCT_
+
 /**
  * struct dog - This is a dog little descr.
  * @name: Name of the dog
@@ -6,9 +9,20 @@
  *
  * Description: Longer description
  */
-typedef struct dog 
+struct dog 
 {
-	char * name; 
+	char *name; 
 	float age;  
-	char * owner;
-} dog_t;
+	char *owner;
+};
+
+/**
+ * @dog_t: Typedef for struct
+ */
+typedef struct dog dog_t;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+#endif /* _STRUCT_ */
